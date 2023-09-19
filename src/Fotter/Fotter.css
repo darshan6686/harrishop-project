@@ -1,0 +1,15 @@
+.section4{
+    height: 300px;
+    width: auto;
+    background-size: cover;
+    background-position: right;
+}
+.input1:focus{
+    outline: none;
+}
+body{
+    margin: 0;
+}
+.containerrr{
+  margin: auto;
+}

@@ -1,0 +1,40 @@
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    /* font-size: 18px; */
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  }
+
+.tex:hover{
+    border-image: linear-gradient(#f6b73c, pink) 30;
+    border-width: 2px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.tax1{
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, black, white) 1;
+}

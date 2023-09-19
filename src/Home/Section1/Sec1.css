@@ -1,0 +1,14 @@
+.circle{
+    animation: 2s infinite animate;
+    transition: ease-in;
+}
+@keyframes animate{
+    from{
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+}
