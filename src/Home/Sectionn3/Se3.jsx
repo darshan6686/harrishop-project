@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import './see.css';
 
 const Se3 = () => {
 
@@ -9,10 +10,10 @@ const Se3 = () => {
         <div className=''>
             <h1 className='font-bold border-0 border-custom-pink border-l-4 text-4xl pl-5'>Popular Product</h1>
         </div>
-            <div className='mt-7 sm:mt-0 group'>
-                <Link to='/' className='me-6 group-open:text-custom-pink'>Top Rated</Link>
-                <Link to='Bestselling' className='me-6 group-open:text-custom-pink'>Best Selling</Link>
-                <Link to='Latestproduct' className='group-open:text-custom-pink'>Latest Product</Link>
+            <div className='mt-7 sm:mt-0'>
+                <Link to='/' className='me-6 top'>Top Rated</Link>
+                <Link to='Bestselling' className='me-6 top'>Best Selling</Link>
+                <Link to='Latestproduct' className='top'>Latest Product</Link>
             </div>
             </div>
             <Outlet />

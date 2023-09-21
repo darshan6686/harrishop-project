@@ -12,7 +12,7 @@ const Demo = () => {
       <div className="container mx-auto pl-5 lg:pl-[10%] 2xl:pl-[12%]">
             <div className="flex-none md:flex justify-between my-10 mr-32 mt-56">
               <h1 className="upcomming">Deal of The Day</h1>
-             <a href="#"><Link to='/Shop' hrefLang="#" className="bg-custom-pink px-7 mt-5 md:mt-0 py-3 font-bold text-white hover:bg-indigo-500 hover:duration-1000 mr-0 lg:mr-16">View All Products</Link></a>
+             <a href="#"><Link to='/Shop' className="bg-custom-pink px-7 mt-5 md:mt-0 py-3 font-bold text-white hover:bg-indigo-500 hover:duration-1000 mr-0 lg:mr-16">View All Products</Link></a>
             </div>
               <div className="item">
                 <div className="item-right h-auto flex items-center border border-r-0">

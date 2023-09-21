@@ -41,10 +41,10 @@ const Mywhistlist = () => {
                 <td className='border'>${item.proce.toFixed(2)}</td>
                 <td className='flex justify-center items-center mt-10 gap-5'>
                   <button className='border px-3 py-1'>-</button>
-                  <p className=''>1</p>
+                  <p className=''>0</p>
                   <button className='border px-3 py-1' onClick={() => dispatch(addToCart(item))}>+</button>
                 </td>
-                <td className='border'>${item.proce.toFixed(2)}</td>
+                <td className='border'>$0.00</td>
                 <td className='border'><button onClick={() => dispatch(removeToWhishlist(item.id))}>x</button></td>
               </tr>
             )

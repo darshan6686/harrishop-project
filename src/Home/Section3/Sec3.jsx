@@ -6,6 +6,7 @@ import aset_104 from '../../../assets/asset 104.svg';
 import aset_105 from '../../../assets/asset 105.svg';
 import asset_88 from '../../../assets/asset 88.jpeg';
 import './Sec3.css';
+import { Link } from 'react-router-dom';
 
 const Sec3 = () => {
   return (
@@ -17,7 +18,7 @@ const Sec3 = () => {
               <p className='text-[#525258] text-[15px] leading-[26px]'>Apple iPhone 12 Pro</p>
               <a className='hover:text-custom-pink hover:duration-700 text-custom-font1 text-[44px] leading-[47.96px] font-[sans-serif] font-bold' href="#">The wait is on: iphone 12 max pro</a>
               <p className='text-[#525258] text-lg font-sans leading-[16px] mt-5'>Last call for up to <span className='text-black text-[24px] leading-[17px] font-sans font-bold'>32%</span> off!</p>
-              <button className='bg-white text-[14px] leading-[26px] tracking-[-0.28px] px-7 py-3 mt-8 flex hover:bg-custom-pink hover:text-white hover:duration-700 shadow-sm'>Buy Now<img src={aset_94}  alt='Not Show' className="mt-[7px] ms-1 hover:text-white" /></button>
+              <Link to='/Shop' className='bg-white text-[14px] leading-[26px] tracking-[-0.28px] px-7 py-3 mt-8 flex hover:bg-custom-pink hover:text-white hover:duration-700 shadow-sm w-36'>Buy Now<img src={aset_94}  alt='Not Show' className="ms-1 hover:text-white" /></Link>
             </div>
           </div>
 

@@ -28,7 +28,7 @@
 
 .main-product-card:hover .three-icon {
     display: block;
-    z-index: 2;
+    z-index: 1;
 }
 
 .discount-div {
@@ -42,24 +42,26 @@
 .heart {
     animation-duration: 0.5s;
     animation-name: slideinheart;
-    transition: ease;
+    animation-timing-function: linear;
+    /* transition: ease-in; */
 }
 
 @keyframes slideinheart {
     0% {
-        margin-left: 20%;
+        margin-left: 10%;
 
     }
     100% {
-        margin-left: 10%;
+        margin-left: 0%;
 
     }
 }
 
 .eye {
-    animation-duration: 0,5s;
+    animation-duration: 0.5s;
     animation-name: slideineye;
-    transition: ease-in-out;
+    animation-timing-function: linear;
+    /* transition: ease-in; */
 }
 
 @keyframes slideineye {
@@ -67,7 +69,7 @@
         margin-left: 20%;
     }
     100% {
-        margin-left: 20%;
+        margin-left: 10%;
 
     }
 }
@@ -75,7 +77,8 @@
 .chain {
     animation-duration: 0.5s;
     animation-name: slideinchain;
-    transition: ease-in;
+    animation-timing-function: linear;
+    /* transition: ease-in; */
 }
 
 @keyframes slideinchain {
@@ -83,6 +86,6 @@
         margin-left: 20%;
     }
     100% {
-        margin-left: 20%;
+        margin-left: 10%;
     }
 }
