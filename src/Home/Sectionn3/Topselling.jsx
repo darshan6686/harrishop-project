@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 
 const Topselling = () => {
 
-  let [isActive, setActive] = useState(false)
   let [showModal, setShowModal] = useState(false)
   let [count, setCount] = useState(1)
 
@@ -125,9 +124,9 @@ const Topselling = () => {
               <img src={ele.image} alt='photo' className='image-scale bg-center h-full w-full z-20'/>
             </div>
 
-            <div onClick={handleCilck} style={{display: isActive ? 'none' : ''}}><button onClick={() => dispatch(addToCart(ele))} > <div className='addtocart h-12 w-full pt-2 bg-black text-white text-center font-semibold items-center justify-center absolute bottom-0 hover:bg-custom-pink duration-500'><i className=" me-2 fa-solid fa-cart-plus duration-500"></i>Add To Cart</div></button></div>
+            <div><button onClick={() => dispatch(addToCart(ele))} > <div className='addtocart h-12 w-full pt-2 bg-black text-white text-center font-semibold items-center justify-center absolute bottom-0 hover:bg-custom-pink duration-500'><i className=" me-2 fa-solid fa-cart-plus duration-500"></i>Add To Cart</div></button></div>
 
-            <Link to='/Mycart' className='hidden'> <div className='addtocart h-12 w-full pt-2 bg-black text-white text-center font-semibold items-center justify-center absolute bottom-0 hover:bg-custom-pink duration-500'><i className="me-2 fa-solid fa-cart-plus duration-500"></i>View cart</div></Link>
+            
         </div>
 
       <div className='h-auto w-full'>

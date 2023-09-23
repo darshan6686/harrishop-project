@@ -7,7 +7,9 @@
         "proce": 188.00,
         "quntity": 1,
         "type": "top rated",
-        "categaty": "watch"
+        "categaty": "watch",
+        "brand": "Apple",
+        "color": "pink"
     },
     {
         "id": 2,
@@ -20,7 +22,9 @@
         "Price": 791.12,
         "proce": 791.12,
         "type": "top rated",
-        "categaty": "tablet"
+        "categaty": "tablet",
+        "brand": "sony",
+        "color": "white"
     },
     {
         "id": 3,
@@ -33,7 +37,9 @@
         "Price": 281.06,
         "proce": 281.06,
         "type": "top rated",
-        "categaty": "moniter"
+        "categaty": "moniter",
+        "brand": "logitech",
+        "color": "yellow"
     },
     {
         "id": 4,
@@ -43,7 +49,9 @@
         "proce": 239.00,
         "quntity": 1,
         "type": "top rated",
-        "categaty": "planner"
+        "categaty": "planner",
+        "brand": "samsung",
+        "color": "yellow"
     },
     {
         "id": 5,
@@ -53,7 +61,9 @@
         "proce": 67.00,
         "quntity": 1,
         "type": "top rated",
-        "categaty": "phone"
+        "categaty": "phone",
+        "brand": "sony",
+        "color": "black"
     },
     {
         "id": 6,
@@ -66,7 +76,9 @@
         "Price": 679.15,
         "proce": 679.15,
         "type": "top rated",
-        "categaty": "spinning reel"
+        "categaty": "spinning reel",
+        "brand": "logitech",
+        "color": "green"
     },
     {
         "id": 7,
@@ -76,7 +88,9 @@
         "proce": 114.00,
         "quntity": 1,
         "type": "top rated",
-        "categaty": "bluetooth"
+        "categaty": "bluetooth",
+        "brand": "deepcool",
+        "color": "orange"
     },
     {
         "id": 8,
@@ -86,7 +100,9 @@
         "proce": 59.00,
         "quntity": 1,
         "type": "top rated",
-        "categaty": "kettle"
+        "categaty": "kettle",
+        "brand": "samsung",
+        "color": "black"
     },
     {
         "id": 9,
@@ -99,7 +115,9 @@
         "Price": 263.12,
         "proce": 263.12 ,
         "type": "top rated",
-        "categaty": "shaver clean"
+        "categaty": "shaver clean",
+        "brand": "sony",
+        "color": "black"
     },
     {
         "id": 10,
@@ -112,7 +130,8 @@
         "proce": 123.30,
         "Price": 123.30,
         "type": "top rated",
-        "categaty": "virtual"
+        "categaty": "virtual",
+        "brand": "sony"
     },
     {
         "id": 11,
@@ -122,7 +141,9 @@
         "proce": 996.00,
         "quntity": 1,
         "type": "top rated",
-        "categaty": "exercise-bike"
+        "categaty": "exercise-bike",
+        "brand": "deepcool",
+        "color": "red"
     },
     {
         "id": 12,
@@ -132,7 +153,9 @@
         "proce": 356.00,
         "quntity": 1,
         "type": "top rated",
-        "categaty": "planner"
+        "categaty": "planner",
+        "brand": "deepcool",
+        "color": "gray"
     },
     {
         "id": 13,
@@ -145,7 +168,9 @@
         "Price": 775.03,
         "proce": 775.03,
         "type": "best selling",
-        "categaty": "moniter"
+        "categaty": "moniter",
+        "brand": "sony",
+        "color": "blue"
     },
     {
         "id": 14,
@@ -155,7 +180,9 @@
         "proce": 79.00,
         "quntity": 1,
         "type": "best selling",
-        "categaty": "wireless"
+        "categaty": "wireless",
+        "brand":"deepcool",
+        "color": "orange"
     },
     {
         "id": 15,
@@ -165,7 +192,9 @@
         "proce": 1660.00,
         "quntity": 1,
         "type": "best selling",
-        "categaty": "phone"
+        "categaty": "phone",
+        "brand": "Apple",
+        "color":"black"
     },
     {
         "id": 16,
@@ -175,7 +204,9 @@
         "proce": 887.00,
         "quntity": 1,
         "type": "best selling",
-        "categaty": "ipad"
+        "categaty": "ipad",
+        "brand": "Apple",
+        "color":"gray"
     },
     {
         "id": 17,
@@ -188,7 +219,9 @@
         "Price": 1674.59,
         "proce": 1674.59 ,
         "type": "best selling",
-        "categaty": "phone"
+        "categaty": "phone",
+        "brand": "Apple",
+        "color": "pink"
     },
     {
         "id": 18,
@@ -198,7 +231,9 @@
         "proce": 169.00,
         "quntity": 1,
         "type": "best selling",
-        "categaty": "wireless"
+        "categaty": "wireless",
+        "brand": "samsung",
+        "color": "yellow"
     },
     {
         "id": 19,
@@ -208,7 +243,9 @@
         "proce": 779.00,
         "quntity": 1,
         "type": "best selling",
-        "categaty": "tablet"
+        "categaty": "tablet",
+        "brand": "deepcool",
+        "color": "red"
     },
     {
         "id": 20,
@@ -218,7 +255,9 @@
         "proce": 688.00,
         "quntity": 1,
         "type": "best selling",
-        "categaty": "moniter"
+        "categaty": "moniter",
+        "brand": "logitech",
+        "color": "white"
     },
     {
         "id": 21,
@@ -228,7 +267,9 @@
         "proce": 89.00,
         "quntity": 1,
         "type": "latest product",
-        "categaty": "bluetooth"
+        "categaty": "bluetooth",
+        "brand": "logitech",
+        "color": "blue"
     },
     {
         "id": 22,
@@ -238,7 +279,9 @@
         "proce": 999.00,
         "quntity": 1,
         "type": "latest product",
-        "categaty": "headset"
+        "categaty": "headset",
+        "brand": "sony",
+        "color": "green"
     },
     {
         "id": 23,
@@ -251,7 +294,9 @@
         "Price": 509.15,
         "proce": 509.15,
         "type": "latest product",
-        "categaty": "computer"
+        "categaty": "computer",
+        "brand": "deepcool",
+        "color": "yellow"
     },
     {
         "id": 24,
@@ -261,7 +306,9 @@
         "proce": 56.00,
         "quntity": 1,
         "type": "latest product",
-        "categaty": "camera"
+        "categaty": "camera",
+        "brand": "samsung",
+        "color":"black"
     },
     {
         "id": 25,
@@ -271,7 +318,9 @@
         "proce": 100.00,
         "quntity": 1,
         "type": "latest product",
-        "categaty": "bluetooth"
+        "categaty": "bluetooth",
+        "brand": "deepcool",
+        "color": "gray"
     },
     {
         "id": 26,
@@ -281,7 +330,9 @@
         "proce": 35.00,
         "quntity": 1,
         "type": "latest product",
-        "categaty": "camera"
+        "categaty": "camera",
+        "brand": "samsung",
+        "color": "orange"
     },
     {
         "id": 27,
@@ -291,6 +342,8 @@
         "proce": 58.00,
         "quntity": 1,
         "type": "latest product",
-        "categaty": "watch"
+        "categaty": "watch",
+        "brand": "logitech",
+        "color": "red"
     }
 ]

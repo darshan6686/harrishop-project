@@ -57,7 +57,7 @@ const Header = () => {
                 <input type="search" className="xl:w-72 xl:h-12 rounded-l-full px-8 focus:outline-none border border-r-0 hidden xl:flex" placeholder="Search for products..." />
                 <span className="h-12 w-10 rounded-r-full xl:bg-white flex items-center border-0 xl:border xl:border-l-0"><i className="fa-solid fa-magnifying-glass"></i></span>
 
-                <span className="text-xl"><i className="fa-regular fa-user mx-2.5 ml-0 xl:ml-16"></i></span>
+                <Link to='/Login' className="text-xl"><i className="fa-regular fa-user mx-2.5 ml-0 xl:ml-16"></i></Link>
                 
                 <Link to='/Mywhistlist' className="text-xl relative"><i className="fa-regular fa-heart mx-2.5"></i><p className="w-5 h-5 flex justify-center items-center rounded-full bg-custom-pink text-white absolute -top-0.5 -right-1 text-xs border-2 border-white">{whish.length}</p></Link>
 
