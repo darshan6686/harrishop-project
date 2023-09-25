@@ -18,18 +18,14 @@ const Shop = () => {
     dispatch(productList())
   }, [])
 
-  let setFilter = (e) => {
-    setCount(e.target.value)
-  }
-
   let [currentPage, setCurrentPage] = useState(1);
   let recordsPerPage = 9;
 
   let lastIndex = currentPage * recordsPerPage;
   let firstIndex = lastIndex - recordsPerPage;
   let record = data.slice(firstIndex, lastIndex);
-  let nPages = Math.ceil(data.length / recordsPerPage)
-  let numbers = [...Array(nPages + 1).keys()].slice(1)
+  let nPages = Math.ceil(data.length / recordsPerPage);
+  let numbers = [...Array(nPages + 1).keys()].slice(1);
 
   let previousPage = () => {
     if(currentPage !== 1){
@@ -47,6 +43,21 @@ const Shop = () => {
     setCurrentPage(id)
   }
 
+  let setFilter = (e) => {
+    setCount(e.target.value)
+
+    switch(e.target.value){
+        case 'lowToHigh':
+            return setCount(data.sort((a,b) => a.proce - b.proce))
+
+        case 'highToLow':
+            return setCount(data.sort((a,b) => b.proce - a.proce))
+
+        default:
+            return data
+    }
+  }
+ 
   return (
     <>
     <div>
@@ -57,8 +68,8 @@ const Shop = () => {
                 <select name='filter' onChange={setFilter} className='pl-3 pr-12 py-2 border'>
                     <option value=''>Short Filtering</option>
                     <option value='latest product'>Latest product</option>
-                    <option value='top rated'>Price low to high</option>
-                    <option value='best selling'>Price high to low</option>
+                    <option value='lowToHigh'>Price low to high</option>
+                    <option value='highToLow'>Price high to low</option>
                 </select>
             </div>
         </div>

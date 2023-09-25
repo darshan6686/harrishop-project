@@ -5,24 +5,19 @@ import { useDispatch } from 'react-redux';
 import { productList } from '../../Saga/Product/Productlist';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const Topselling = () => {
 
-  let [showModal, setShowModal] = useState(false)
-  let [count, setCount] = useState(1)
+  const [showModal, setShowModal] = useState(false)
+  const [count, setCount] = useState(1)
 
-  let dispatch = useDispatch();
-  let data = useSelector((state) => state.productData)
+  const dispatch = useDispatch();
+  const data = useSelector((state) => state.productData)
 
   useEffect(() => {
     dispatch(productList())
   }, [])
-
-  function handleCilck(){
-    setActive(true)
-  }
-
+  
   return (
     <>
     <div className='container-2xl'>
