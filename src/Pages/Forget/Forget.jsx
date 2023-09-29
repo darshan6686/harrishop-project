@@ -1,5 +1,6 @@
 import React from 'react'
 import a4 from '../../../Casset/a4.svg';
+import { Link } from 'react-router-dom';
 
 const Forget = () => {
   return (
@@ -17,7 +18,7 @@ const Forget = () => {
                </div>
               
                <button className='bg-custom-pink hover:bg-custom-font1 hover:duration-500 text-white text-[20px] m-auto flex mt-7 justify-center py-4 w-9/12' >Send Request</button>
-               <p className='text-center mt-5 mb-16 text-[#525258] text-[16px]'>Remember your password ? <span className='text-[#ff1492]'><a href='#'>Login</a></span></p>
+               <p className='text-center mt-5 mb-16 text-[#525258] text-[16px]'>Remember your password ? <span className='text-[#ff1492]'><Link to='/Login'>Login</Link></span></p>
            </div>
        </div>
    </div>

@@ -8,6 +8,7 @@ import './Shop.css'
 const Shop = () => {
   
   let [count, setCount] = useState("")
+  let [count1, setCount1] = useState("")
   let [showModal, setShowModal] = useState(false)
   let [num, setNum] = useState(1)
 
@@ -43,34 +44,67 @@ const Shop = () => {
     setCurrentPage(id)
   }
 
-  let setFilter = (e) => {
-    setCount(e.target.value)
-
-    switch(e.target.value){
-        case 'lowToHigh':
-            return setCount(data.sort((a,b) => a.proce - b.proce))
-
-        case 'highToLow':
-            return setCount(data.sort((a,b) => b.proce - a.proce))
-
-        default:
-            return data
-    }
-  }
+  let [sorting, setSorting] = useState(data);
  
+  let shortFilter = () => {
+      setCount("")
+      let short = data.sort((a,b) => a.id - b.id)
+      setSorting([...short])
+  }
+
+  let latest = () => {
+      shortFilter();
+      setCount("latest product")
+  }
+
+  let setLowToHigh = () => {
+      setCount("")
+      let lowProduct = data.sort((a,b) => a.proce - b.proce)
+      setSorting([...lowProduct])
+  }
+
+  let setHighToLow = () => {
+      setCount("")
+      let highProduct = data.sort((a,b) => b.proce - a.proce)
+      setSorting([...highProduct])
+  }
+
+  let sortOne = (price, price2) => {
+    setCount(price)
+    setCount1(price2)
+  }
+
+  let sortFour = () => {
+    setCount(200.00)
+    setCount1(100000.00)
+  }
+
+
   return (
     <>
     <div>
         <div className='container-2xl w-full h-auto pt-40'>
         <div className='w-10/12 h-auto mx-auto flex justify-between p-5 border'>
             <h1 className='text-lg'>Showing 1-9 of 27 results</h1>
-            <div>
-                <select name='filter' onChange={setFilter} className='pl-3 pr-12 py-2 border'>
-                    <option value=''>Short Filtering</option>
-                    <option value='latest product'>Latest product</option>
-                    <option value='lowToHigh'>Price low to high</option>
-                    <option value='highToLow'>Price high to low</option>
-                </select>
+            <div className=''>
+
+                <details className="group">
+                    <summary className="flex justify-between items-center cursor-pointer border px-3 py-2">
+                        <span className='text-lg'>Short Filter</span>
+                        <span className="transition group-open:rotate-90 ml-7">
+                            <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.3" viewBox="0 0 24 24" width="24" className='-rotate-90'><path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </span>
+                    </summary>
+                    <ul className="text-neutral-600 group-open:animate-fadeIn px-3">
+                        <li className='mb-2 cursor-pointer' onClick={shortFilter}>Short Filter</li>
+                        <li className='mb-2 cursor-pointer' onClick={latest}>latest product</li>
+                        <li className='mb-2 cursor-pointer' onClick={setLowToHigh}>Price low to high</li>
+                        <li className='mb-2 cursor-pointer' onClick={setHighToLow}>Price high to low</li>
+                    </ul>
+                </details>
+
+
             </div>
         </div>
             <div className='w-10/12 h-auto mx-auto flex gap-10'>
@@ -263,10 +297,10 @@ const Shop = () => {
                             <div>
                                 <hr />
                                 <div className='w-full h-40 overflow-auto mt-7 text-custom-font'>
-                                    <input type='radio' name='price' className='w-4 h-4 my-2 cursor-pointer' /> <span className='ml-2 cursor-pointer'>$10.00 - $49.00</span> <br />
-                                    <input type='radio' name='price' className='w-4 h-4 my-2 cursor-pointer' /> <span className='ml-2 cursor-pointer'>$50.00 - $99.00</span> <br />
-                                    <input type='radio' name='price' className='w-4 h-4 my-2 cursor-pointer' /> <span className='ml-2 cursor-pointer'>$100.00 - $199.00</span> <br />
-                                    <input type='radio' name='price' className='w-4 h-4 my-2 cursor-pointer' /> <span className='ml-2 cursor-pointer'>$200.00+</span>
+                                    <input onClick={() => sortOne(10.00,49.00)} type='radio' name='price' className='w-4 h-4 my-2 cursor-pointer' /> <span className='ml-2 cursor-pointer'>$10.00 - $49.00</span> <br />
+                                    <input onClick={() => sortOne(50.00,99.00)} type='radio' name='price' className='w-4 h-4 my-2 cursor-pointer' /> <span className='ml-2 cursor-pointer'>$50.00 - $99.00</span> <br />
+                                    <input onClick={() => sortOne(100.00,199.00)} type='radio' name='price' className='w-4 h-4 my-2 cursor-pointer' /> <span className='ml-2 cursor-pointer'>$100.00 - $199.00</span> <br />
+                                    <input onClick={sortFour} type='radio' name='price' className='w-4 h-4 my-2 cursor-pointer' /> <span className='ml-2 cursor-pointer'>$200.00+</span>
                                 </div>
                             </div>
                         </details>
@@ -384,6 +418,7 @@ const Shop = () => {
               
                     </div> 
                     )})}
+
 
                     {data.filter((ell) => {return ell.categaty === count}).map((elem) => {
                         return(
@@ -805,9 +840,9 @@ const Shop = () => {
                     })}
 
 
-                    { data.filter((ell) => {return ell.proce >= count && ell.proce <= count}).map((elem) => {
+                    { data.filter((ell) => {return ell.proce >= count && ell.proce <= count1}).map((elem) => {
                         return( 
-                            <div key={elem.id} className='main-product-card h-auto w-[290px] mt-5 border border-black'>
+                            <div key={elem.id} className='main-product-card h-auto w-[290px] mt-5'>
                             <div className='bg-[#F6F8FA] h-[350px] w-[320px] relative'>
                               <div className='z-4 bg-custom-pink text-sm h-auto text-white w-auto px-3 absolute mt-5  sale-div z-0'>{elem.Sal}</div>
                               <div className='z-5 bg-black h-auto w-auto text-sm px-3 text-white mt-11 absolute discount-div z-0'>{elem.Pr}</div>
@@ -913,7 +948,8 @@ const Shop = () => {
                     </div>
                 </div>
                 </div>
-
+                
+                </div>
                 <nav className='mt-10'>
                     <ul className='flex justify-center gap-3'>
                         <li onClick={previousPage} className='cursor-pointer border px-4 py-2 hover:bg-custom-pink hover:text-white'>
@@ -935,8 +971,7 @@ const Shop = () => {
                         </li>
                     </ul>
                 </nav>
-        </div>
-      </div>
+                </div>
     </>
   )
 }

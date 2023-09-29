@@ -55,9 +55,9 @@ const Latestproduct = () => {
     
                         <div className='flex justify-center gap-10'>
                             <div className='w-[48%] h-auto'>
-                                 <img src={ele.image} className='w-full h-[450px] px-10' />
+                              <img src={ele.image} className='w-full h-[450px] px-10' />
     
-                                 <div className='flex justify-center gap-5 my-7 px-10'>
+                              <div className='flex justify-center gap-5 my-7 px-10'>
                                      <div className='w-1/4'>
                                          <img src={ele.image} className='w-full h-auto' />
                                      </div>
@@ -73,7 +73,7 @@ const Latestproduct = () => {
                                      <div className='w-1/4'>
                                          <img src={ele.image} className='w-full h-auto' />
                                      </div>
-                                 </div>
+                              </div>
     
                             </div>
                             <div className='w-[52%] h-auto'>

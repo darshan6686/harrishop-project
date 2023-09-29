@@ -10,7 +10,7 @@ const Login = () => {
 
     const [data, setData] = useState([])
 
-    let submit = (e) => {
+    const submit = (e) => {
         e.preventDefault();
 
         const newData = { email:email, password:password}
@@ -44,7 +44,7 @@ const Login = () => {
                             <p className='ms-2 text-custom-font text-[17px]'>Remember me</p>
                         </div>
                         <div>
-                            <a href='#'><p className='text-custom-font1 text-[16px] hover:text-custom-pink hover:duration-500'>Forgot Password?</p></a>
+                            <Link to='/Forget'><p className='text-custom-font1 text-[16px] hover:text-custom-pink hover:duration-500'>Forgot Password?</p></Link>
                         </div>
                     </div>
                     <button className='bg-custom-pink hover:bg-custom-font1 hover:duration-1000 text-white text-[16px] m-auto flex mt-7 justify-center py-3.5 w-9/12'>Sign In</button>

@@ -40,7 +40,7 @@ function App() {
                 <Route path='/About' element={<About />}></Route>
                 <Route path='/Error' element={<Error />}></Route>
                 <Route path='/Faqs' element={<Faqs />}>
-                    <Route path="Question" element={<Question />}></Route>
+                    <Route path="" element={<Question />}></Route>
                     <Route path="Communti" element={<Communti />}></Route>
                     <Route path="Support" element={<Support />}></Route>
                 </Route>
